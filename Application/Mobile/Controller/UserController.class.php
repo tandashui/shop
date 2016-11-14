@@ -507,7 +507,7 @@ class UserController extends MobileBaseController
         $user_info = $user_info['result'];
         if (IS_POST) {
             I('post.nickname') ? $post['nickname'] = I('post.nickname') : false; //昵称
-            I('post.qq') ? $post['qq'] = I('post.qq') : false;  //QQ号码
+            // I('post.qq') ? $post['qq'] = I('post.qq') : false;  //QQ号码
             I('post.head_pic') ? $post['head_pic'] = I('post.head_pic') : false; //头像地址
             I('post.sex') ? $post['sex'] = I('post.sex') : false;  // 性别
             I('post.birthday') ? $post['birthday'] = strtotime(I('post.birthday')) : false;  // 生日
